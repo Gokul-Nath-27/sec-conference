@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICRACS - 2022</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <style>
+      #regbutton {
+        transition: transform 0.2s;
+      }
+
+      #regbutton:hover {
+        transform: scale(1.1);
+      }
+
+      #registration {
+        animation-duration: 4s;
+        animation-name: fadein;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0.1;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      #heading1,
+      #heading2,
+      #heading3 {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 1px 2px 5px white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md bg-primary navbar-dark p-3 fixed-top">
+        <span
+          class="navbar-brand fw-bolder text-warning fs-5 shadow p-1"
+        ></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="collapsibleNavbar"
+        >
+          <ul class="nav nav-pills">
+            <li class="nav-item" id="navlink1">
+              <a class="nav-link text-white" href="index.html"
+                ><i class="fa-solid fa-house fs-4 p-1"></i>HOME</a
+              >
+            </li>
+            <li class="nav-item" id="navlink2">
+              <a class="nav-link text-white" href="aboutus.html"
+                ><i class="fa-solid fa-user-graduate fs-4 p-1"></i>ABOUT US</a
+              >
+            </li>
+            <li class="nav-item" id="navlink3">
+              <a class="nav-link text-white" href="callforpapers.html"
+                ><i class="fa-solid fa-circle-info fs-4 p-1"></i>CALL FOR
+                PAPERS</a
+              >
+            </li>
+            <li class="nav-item" id="navlink4">
+              <a class="nav-link text-white" href="registration.html"
+                ><i class="fa-solid fa-check fs-4 p-1"></i>REGISTRATION</a
+              >
+            </li>
+            <li class="nav-item" id="navlink5">
+              <a class="nav-link text-white" href="papersubmission.html"
+                ><i class="fa-solid fa-sheet-plastic fs-4 p-1"></i>PAPER
+                SUBMISSION</a
+              >
+            </li>
+            <li class="nav-item" id="navlink6">
+              <a class="nav-link text-white" href="contactus.html"
+                ><i class="fa-solid fa-phone fs-4 p-1"></i>CONTACT US</a
+              >
+            </li>
+            <li class="nav-item" id="navlink7">
+              <a class="nav-link text-white" href="committee.html"
+                ><i class="fa-solid fa-people-group fs-4 p-1"></i>COMMITTEE</a
+              >
+            </li>
+            <li class="nav-item" id="navlink7">
+              <a
+                class="nav-link text-white"
+                href='brochure/ICRACS2022-brochure.pdf'
+                download
+                ><i class="fa-solid fa-envelope fs-4 p-1"></i>BROCHURE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div>
+      <div class="container p-3 mt-5 text-white">
+        <h1 class="text-center pt-5" id="heading1">REGISTRATION & PAYMENT</h1>
+
+        <table class="justify-content-center d-flex p-4" id="registration">
+          <tr
+            class="p-3 fs-3 border border-3 shadow text-center text-white bg-dark"
+          >
+            <td class="p-2">CATEGORY</td>
+            <td class="p-2"></td>
+            <td class="p-2">AMOUNT TO BE PAID</td>
+          </tr>
+          <tr
+            class="p-3 fs-4 text-center bg-white text-dark border border-3 shadow"
+          >
+            <td class="p-2">Student (UG/PG/Research Scholar)</td>
+            <td class="p-2">:</td>
+            <td class="p-2">Rs. 1000</td>
+          </tr>
+          <tr
+            class="p-3 fs-4 text-center bg-white text-dark border border-3 shadow"
+          >
+            <td class="p-2">Academics</td>
+            <td class="p-2">:</td>
+            <td class="p-2">Rs. 1000</td>
+          </tr>
+          <tr
+            class="p-3 fs-4 text-center bg-white text-dark border border-3 shadow"
+          >
+            <td class="p-2">Industry Delegates</td>
+            <td class="p-2">:</td>
+            <td class="p-2">Rs. 1500</td>
+          </tr>
+        </table>
+
+        <div class="d-flex justify-content-center mt-3">
+          <a
+            href="https://forms.gle/inzu4REJoWFTnjUF6"
+            class="btn btn-lg btn-outline-light"
+            id="regbutton"
+          >
+            REGISTER <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+
+        <div class="pt-3">
+          <h5 class="fs-3 fw-normal" id="heading2">REGISTRATION DETAILS :</h5>
+          <ul class="fw-bold ps-2 fs-5">
+            <li>
+              It is mandatory for at least one author to register for each paper
+              and present the paper for inclusion in the conference proceedings.
+            </li>
+            <li>Registration fee is non-refundable.</li>
+            <li>All the submitted papers are to be plagiarism checked.</li>
+            <li>
+              Registration is required for each accepted paper separately.
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-3">
+          <h5 class="fs-3 fw-normal" id="heading3">PAYMENT DETAILS :</h5>
+          <div class="ps-2 fs-5">
+            <table>
+              <tr>
+                <td class="p-2">Account Name</td>
+                <td class="p-2">-</td>
+                <td class="p-2"><b> SEC CONFERENCE </b></td>
+              </tr>
+              <tr>
+                <td class="p-2">Account Number</td>
+                <td class="p-2">-</td>
+                <td class="p-2"><b> 992431630 </b></td>
+              </tr>
+              <tr>
+                <td class="p-2">Bank</td>
+                <td class="p-2">-</td>
+                <td class="p-2"><b> Indian Bank </b></td>
+              </tr>
+              <tr>
+                <td class="p-2">Branch</td>
+                <td class="p-2">-</td>
+                <td class="p-2"><b> Valarpuram </b></td>
+              </tr>
+              <tr>
+                <td class="p-2">IFSC Code</td>
+                <td class="p-2">-</td>
+                <td class="p-2"><b> IDIB000V060 </b></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary row p-3 m-1">
+      <div class="col">
+        <img
+          src="images/SEC_logo.jpeg"
+          alt="sec_logo"
+          width="360"
+          height="120"
+        />
+        <p class="fs-6 pt-2 text-white fw-normal">
+          Saveetha Engineering College is one of the very renowned institutes
+          located at Chennai. Saveetha Engineering College, started in the year
+          2001 by the Saveetha Medical & Educational Trust.
+        </p>
+        <button class="btn btn-warning">
+          <a
+            href="https://www.saveetha.ac.in/"
+            class="text-dark fw-normal"
+            style="text-decoration: none"
+          >
+            KNOW MORE ?
+          </a>
+        </button>
+      </div>
+
+      <div class="col">
+        <h1 class="fs-3 text-white">Address:</h1>
+        <div class="text-white fs-6 fw-normal pt-2">
+          <i class="fa-solid fa-location-arrow pe-2"></i>
+          Saveetha Engineering College, Saveetha Nagar, Thandalam, Chennai –
+          602105
+        </div>
+        <div class="text-white fs-6 fw-normal pt-2">
+          <i class="fa-solid fa-phone pe-2"></i>+91 9952184952 / 7871784886 /
+          9994958058
+        </div>
+        <div class="text-white fs-6 fw-normal pt-2">
+          <i class="fa-solid fa-envelope pe-2"></i>
+          <a href="mailto:icracs22@gmail.com" class="text-white"
+            >icracs22@gmail.com</a
+          >
+        </div>
+      </div>
+
+      <div class="col">
+        <h1 class="fs-3 text-white">Quick Links:</h1>
+        <ul>
+          <li style="list-style: none">
+            <a
+              href="index.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >HOME</a
+            >
+          </li>
+          <li style="list-style: none">
+            <a
+              href="aboutus.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >ABOUT US</a
+            >
+          </li>
+          <li style="list-style: none">
+            <a
+              href="callforpapers.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >CALL FOR PAPERS</a
+            >
+          </li>
+          <li style="list-style: none">
+            <a
+              href="registration.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >REGISTRATION</a
+            >
+          </li>
+          <li style="list-style: none">
+            <a
+              href="papersubmission.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >PAPER SUBMISSION</a
+            >
+          </li>
+          <li style="list-style: none">
+            <a
+              href="contactus.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >CONTACT US</a
+            >
+          </li>
+          <li style="list-style: none">
+            <a
+              href="committee.html"
+              class="text-white fs-6"
+              style="text-decoration: none"
+              >COMMITTEE</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <h6 class="text-white text-center pt-3 fw-normal">
+        © 2022 Saveetha Engineering College. All Rights Reserved
+      </h6>
+    </footer>
+  </body>
+</html>

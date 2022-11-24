@@ -1,0 +1,152 @@
+#speaker1,#speaker2 {
+    transition: transform .2s;
+}
+
+#speaker1:hover,
+#speaker2:hover {
+    transform: scale(1.1);
+}
+
+#title {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #198);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+#dept {
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#sec_logo {
+    animation-duration: 9s;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#info {
+    border-radius: 0px 0px 230px 230px;
+}
+
+@media only screen and (min-width: 1200px) {
+    #typewriter {
+        overflow: hidden;
+        border-radius: 100px;
+        white-space: nowrap;
+        letter-spacing: .15em;
+        animation:
+            typing 8.5s steps(40, end),
+            blink-caret .50s step-end infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 75%
+        }
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: black;
+        }
+    }
+}
+
+
+
+
+#submission,
+#dates {
+    border-radius: 150px 0px 150px 0px;
+}
+
+#speaker {
+    border-radius: 145px 0px 145px 0px;
+}
+
+@media screen and (min-width: 300px) {
+    #icracs {
+        text-transform: uppercase;
+        padding: 10px;
+        text-align: center;
+        font-size: 90px;
+        color: orange;
+        text-shadow: 5px 0 black, 0 2px black, 5px 6px black, 0 4px black;
+        animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #icracs {
+        padding-top: 100px;
+        text-transform: uppercase;
+        transform: rotate(-23deg) skew(-15deg);
+        font-size: 99px;
+
+        color: orange;
+        text-shadow: 5px 0 black, 0 2px black, 5px 6px black, 0 4px black;
+        animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#aboutus,
+    #aboutdept {
+        animation-duration: 4s;
+        animation-name: fadein;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0.1;
+        }
+
+        to {
+            opacity: 1;
+
+        }
+    }
+
+    #aboutusheading, #aboutinstitutionheading, #aboutdeptheading {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 1px 2px 5px white;
+    }
